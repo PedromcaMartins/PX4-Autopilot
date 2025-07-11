@@ -44,8 +44,8 @@ publications:
   - topic: /fmu/out/timesync_status
     type: px4_msgs::msg::TimesyncStatus
 
-  # - topic: /fmu/out/vehicle_angular_velocity
-  #   type: px4_msgs::msg::VehicleAngularVelocity
+  - topic: /fmu/out/vehicle_angular_velocity
+    type: px4_msgs::msg::VehicleAngularVelocity
 
   - topic: /fmu/out/vehicle_attitude
     type: px4_msgs::msg::VehicleAttitude
@@ -73,6 +73,30 @@ publications:
 
   - topic: /fmu/out/vehicle_trajectory_waypoint_desired
     type: px4_msgs::msg::VehicleTrajectoryWaypoint
+
+  - topic: /fmu/out/raw_sensor/sensor_accel
+    type: px4_msgs::msg::SensorAccel
+
+  - topic: /fmu/out/raw_sensor/sensor_baro
+    type: px4_msgs::msg::SensorBaro
+
+  - topic: /fmu/out/raw_sensor/sensor_correction
+    type: px4_msgs::msg::SensorCorrection
+
+  - topic: /fmu/out/raw_sensor/sensor_gyro
+    type: px4_msgs::msg::SensorGyro
+
+  - topic: /fmu/out/raw_sensor/sensor_mag
+    type: px4_msgs::msg::SensorMag
+
+  - topic: /fmu/out/vehicle_acceleration
+    type: px4_msgs::msg::VehicleAcceleration
+
+  - topic: /fmu/out/vehicle_imu
+    type: px4_msgs::msg::VehicleImu
+
+  - topic: /fmu/out/vehicle_magnetometer
+    type: px4_msgs::msg::VehicleMagnetometer
 
 # Create uORB::Publication
 subscriptions:
