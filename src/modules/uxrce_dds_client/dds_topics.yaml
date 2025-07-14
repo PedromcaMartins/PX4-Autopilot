@@ -3,6 +3,7 @@
 # This file maps all the topics that are to be used on the uXRCE-DDS client.
 #
 #####
+
 publications:
 
   - topic: /fmu/out/register_ext_component_reply
@@ -10,93 +11,123 @@ publications:
 
   - topic: /fmu/out/airspeed_validated
     type: px4_msgs::msg::AirspeedValidated
+    rate_limit: 50.
 
   - topic: /fmu/out/arming_check_request
     type: px4_msgs::msg::ArmingCheckRequest
+    rate_limit: 5.
 
   - topic: /fmu/out/mode_completed
     type: px4_msgs::msg::ModeCompleted
+    rate_limit: 50.
 
   - topic: /fmu/out/battery_status
     type: px4_msgs::msg::BatteryStatus
+    rate_limit: 1.
 
   - topic: /fmu/out/collision_constraints
     type: px4_msgs::msg::CollisionConstraints
+    rate_limit: 50.
 
   - topic: /fmu/out/estimator_status_flags
     type: px4_msgs::msg::EstimatorStatusFlags
+    rate_limit: 5.
 
   - topic: /fmu/out/failsafe_flags
     type: px4_msgs::msg::FailsafeFlags
+    rate_limit: 5.
 
   - topic: /fmu/out/manual_control_setpoint
     type: px4_msgs::msg::ManualControlSetpoint
+    rate_limit: 25.
 
   - topic: /fmu/out/message_format_response
     type: px4_msgs::msg::MessageFormatResponse
 
   - topic: /fmu/out/position_setpoint_triplet
     type: px4_msgs::msg::PositionSetpointTriplet
+    rate_limit: 5.
 
   - topic: /fmu/out/sensor_combined
     type: px4_msgs::msg::SensorCombined
 
   - topic: /fmu/out/timesync_status
     type: px4_msgs::msg::TimesyncStatus
+    rate_limit: 10.
 
   - topic: /fmu/out/vehicle_angular_velocity
     type: px4_msgs::msg::VehicleAngularVelocity
+    rate_limit: 200.
+
+  - topic: /fmu/out/vehicle_land_detected
+    type: px4_msgs::msg::VehicleLandDetected
+    rate_limit: 5.
 
   - topic: /fmu/out/vehicle_attitude
     type: px4_msgs::msg::VehicleAttitude
+    rate_limit: 200.
 
   - topic: /fmu/out/vehicle_control_mode
     type: px4_msgs::msg::VehicleControlMode
+    rate_limit: 50.
 
   - topic: /fmu/out/vehicle_command_ack
     type: px4_msgs::msg::VehicleCommandAck
 
   - topic: /fmu/out/vehicle_global_position
     type: px4_msgs::msg::VehicleGlobalPosition
+    rate_limit: 50.
 
   - topic: /fmu/out/vehicle_gps_position
     type: px4_msgs::msg::SensorGps
+    rate_limit: 50.
 
   - topic: /fmu/out/vehicle_local_position
     type: px4_msgs::msg::VehicleLocalPosition
+    rate_limit: 50.
 
   - topic: /fmu/out/vehicle_odometry
     type: px4_msgs::msg::VehicleOdometry
 
   - topic: /fmu/out/vehicle_status
     type: px4_msgs::msg::VehicleStatus
+    rate_limit: 5.
 
-  - topic: /fmu/out/vehicle_trajectory_waypoint_desired
-    type: px4_msgs::msg::VehicleTrajectoryWaypoint
+  - topic: /fmu/out/home_position
+    type: px4_msgs::msg::HomePosition
+    rate_limit: 5.
 
-  - topic: /fmu/out/raw_sensor/sensor_accel
-    type: px4_msgs::msg::SensorAccel
+  # - topic: /fmu/out/raw_sensor/sensor_accel
+  #   type: px4_msgs::msg::SensorAccel
+  #   rate_limit: 200.
 
-  - topic: /fmu/out/raw_sensor/sensor_baro
-    type: px4_msgs::msg::SensorBaro
+  # - topic: /fmu/out/raw_sensor/sensor_baro
+  #   type: px4_msgs::msg::SensorBaro
+  #   rate_limit: 200.
 
-  - topic: /fmu/out/raw_sensor/sensor_correction
-    type: px4_msgs::msg::SensorCorrection
+  # - topic: /fmu/out/raw_sensor/sensor_correction
+  #   type: px4_msgs::msg::SensorCorrection
+  #   rate_limit: 200.
 
-  - topic: /fmu/out/raw_sensor/sensor_gyro
-    type: px4_msgs::msg::SensorGyro
+  # - topic: /fmu/out/raw_sensor/sensor_gyro
+  #   type: px4_msgs::msg::SensorGyro
+  #   rate_limit: 200.
 
-  - topic: /fmu/out/raw_sensor/sensor_mag
-    type: px4_msgs::msg::SensorMag
+  # - topic: /fmu/out/raw_sensor/sensor_mag
+  #   type: px4_msgs::msg::SensorMag
+  #   rate_limit: 200.
 
-  - topic: /fmu/out/vehicle_acceleration
-    type: px4_msgs::msg::VehicleAcceleration
+  # - topic: /fmu/out/vehicle_acceleration
+  #   type: px4_msgs::msg::VehicleAcceleration
+  #   rate_limit: 200.
 
-  - topic: /fmu/out/vehicle_imu
-    type: px4_msgs::msg::VehicleImu
+  # - topic: /fmu/out/vehicle_imu
+  #   type: px4_msgs::msg::VehicleImu
+  #   rate_limit: 200.
 
-  - topic: /fmu/out/vehicle_magnetometer
-    type: px4_msgs::msg::VehicleMagnetometer
+  # - topic: /fmu/out/vehicle_magnetometer
+  #   type: px4_msgs::msg::VehicleMagnetometer
+  #   rate_limit: 200.
 
 # Create uORB::Publication
 subscriptions:
