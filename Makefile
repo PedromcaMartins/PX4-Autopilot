@@ -318,6 +318,7 @@ px4io_update:
 	cp build/px4_io-v2_default/px4_io-v2_default.bin boards/px4/fmu-v5x/extras/px4_io-v2_default.bin
 	cp build/px4_io-v2_default/px4_io-v2_default.bin boards/px4/fmu-v6x/extras/px4_io-v2_default.bin
 	cp build/px4_io-v2_default/px4_io-v2_default.bin boards/px4/fmu-v6c/extras/px4_io-v2_default.bin
+	cp build/px4_io-v2_default/px4_io-v2_default.bin boards/px4/erocket/extras/px4_io-v2_default.bin
 	# cubepilot_io-v2_default
 	cp build/cubepilot_io-v2_default/cubepilot_io-v2_default.bin boards/cubepilot/cubeorange/extras/cubepilot_io-v2_default.bin
 	cp build/cubepilot_io-v2_default/cubepilot_io-v2_default.bin boards/cubepilot/cubeyellow/extras/cubepilot_io-v2_default.bin
@@ -345,6 +346,7 @@ bootloaders_update: \
 	mro_ctrl-zero-h7-oem_bootloader \
 	mro_pixracerpro_bootloader \
 	px4_fmu-v6c_bootloader \
+	px4_erocket_bootloader \
 	px4_fmu-v6u_bootloader \
 	px4_fmu-v6x_bootloader \
 	px4_fmu-v6xrt_bootloader \

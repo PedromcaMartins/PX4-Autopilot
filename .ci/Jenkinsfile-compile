@@ -111,6 +111,7 @@ pipeline {
                      "px4_fmu-v5_uavcanv0periph",
                      "px4_fmu-v5x_default",
                      "px4_fmu-v5x_rover",
+                     "px4_erocket_default",
                      "px4_fmu-v6c_default",
                      "px4_fmu-v6c_rover",
                      "px4_fmu-v6u_default",

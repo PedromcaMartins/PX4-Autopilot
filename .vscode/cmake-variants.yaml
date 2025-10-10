@@ -71,6 +71,16 @@ CONFIG:
       buildType: MinSizeRel
       settings:
         CONFIG: px4_fmu-v5x_default
+    px4_erocket_default:
+      short: px4_erocket
+      buildType: MinSizeRel
+      settings:
+        CONFIG: px4_erocket_default
+    px4_erocket_bootloader:
+      short: px4_erocket_bootloader
+      buildType: MinSizeRel
+      settings:
+        CONFIG: px4_erocket_bootloader
     px4_fmu-v6c_default:
       short: px4_fmu-v6c
       buildType: MinSizeRel
